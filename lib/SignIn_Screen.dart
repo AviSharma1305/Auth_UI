@@ -25,38 +25,6 @@ class SignInScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Column(
                     children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          ButtonBar(
-                            children: <Widget>[
-                              ButtonTheme(
-                                minWidth: 120.0,
-                                height: 40.0,
-                                child: RaisedButton(
-                                  color: kprime,
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              SignUp_Screen()),
-                                    );
-                                  },
-                                  child: Text(
-                                    "Sign Up",
-                                    style:
-                                        Theme.of(context).textTheme.headline6,
-                                  ),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20.0),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
                       Spacer(),
                       Padding(
                         padding: const EdgeInsets.only(bottom: 30),
@@ -81,7 +49,6 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                       Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Padding(
                             padding: const EdgeInsets.only(right: 16.0),
