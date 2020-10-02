@@ -66,9 +66,9 @@ class SignInScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Spacer(),
+
                       Padding(
-                        padding: const EdgeInsets.only(bottom: 30),
+                        padding: const EdgeInsets.only(top: 30, bottom: 30),
                         child: Row(
                           children: <Widget>[
                             SizedBox(width: 20),
@@ -86,6 +86,58 @@ class SignInScreen extends StatelessWidget {
                             ),
                           ],
                         ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 30),
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      child: Divider(
+                        color: kprime,
+                        thickness: 3,
+                        indent: 40,
+                        endIndent: 10,
+                      ),
+                    ),
+                  ),
+                  Text(
+                      "OR",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      child: Divider(
+                        color: kprime,
+                        thickness: 3,
+                        indent: 10,
+                        endIndent: 40,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 30, bottom: 30),
+                  child: Row(
+                    children: <Widget>[
+                      SizedBox(width: 20),
+                      Container(
+                        padding: EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.rectangle,
+                          color: kprime,
+                        ),
+                        child: Image.asset("assets/Icons/facebook.png"),
                       ),
                     ],
                   ),
