@@ -1,8 +1,8 @@
 import 'package:auth_app/Themes.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-// ignore: camel_case_types
-class SignUp_Screen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,129 +23,130 @@ class SignUp_Screen extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(bottom: 30.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                child: Column(
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: Icon(
-                        Icons.account_circle,
-                        color: kprime,
-                      ),
-                    ),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Name",
+                    Text(
+                        "Sign up to connect",
+                        style: GoogleFonts.lato(
+                          fontSize: 38,
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
                         ),
                       ),
+                    Text(
+                      "with world",
+                      style: GoogleFonts.lato(
+                        fontSize: 38,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                      ),
                     ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: Icon(
-                        Icons.person_outline,
-                        color: kprime,
+                        padding: const EdgeInsets.only(bottom: 30.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16.0),
+                            child: Icon(
+                              Icons.account_circle,
+                              color: kprime,
+                            ),
+                          ),
+                          Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: "Name",
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Username",
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: Icon(
-                        Icons.alternate_email,
-                        color: kprime,
+                      padding: const EdgeInsets.only(bottom: 30.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16.0),
+                            child: Icon(
+                              Icons.person_outline,
+                              color: kprime,
+                            ),
+                          ),
+                          Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: "Username",
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Email Address",
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: Icon(
-                        Icons.lock_outline,
-                        color: kprime,
+                      padding: const EdgeInsets.only(bottom: 30.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16.0),
+                            child: Icon(
+                              Icons.alternate_email,
+                              color: kprime,
+                            ),
+                          ),
+                          Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: "Email Address",
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Password",
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 30.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.only(right: 16.0),
-                      child: Icon(
-                        Icons.lock_outline,
-                        color: kprime,
+                      padding: const EdgeInsets.only(bottom: 30.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16.0),
+                            child: Icon(
+                              Icons.lock_outline,
+                              color: kprime,
+                            ),
+                          ),
+                          Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: "Password",
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Confirm Password",
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30),
-                child: Row(
-                  children: <Widget>[
-                    SizedBox(width: 20),
-                    Spacer(),
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: kprime,
-                      ),
-                      child: Icon(
-                        Icons.arrow_forward,
-                        color: Colors.black,
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30),
+                      child: Row(
+                        children: <Widget>[
+                          SizedBox(width: 20),
+                          Spacer(),
+                          Container(
+                            padding: EdgeInsets.all(16),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: kprime,
+                            ),
+                            child: Icon(
+                              Icons.arrow_forward,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
